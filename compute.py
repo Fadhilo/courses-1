@@ -52,3 +52,8 @@ print("total fadhel: %.2f" % (fadhel + total_commun/Decimal(2)))
 print("Safwen a payé: %.2f" % paid_by_safwen)
 print("Fadhel a payé: %.2f" % paid_by_fadhel)
 print("total a payé: %.2f" % (paid_by_safwen+paid_by_fadhel))
+
+if paid_by_safwen > (safwen + total_commun/Decimal(2)):
+    print('fadhel paye safwen %.2f euro' %(paid_by_safwen - (safwen + total_commun/Decimal(2))))
+elif paid_by_fadhel > (fadhel + total_commun/Decimal(2)):
+    print('safwen paye fadhel %.2f euro' %(paid_by_fadhel - (fadhel + total_commun/Decimal(2))))
